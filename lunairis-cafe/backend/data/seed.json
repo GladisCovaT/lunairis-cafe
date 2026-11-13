@@ -1,0 +1,72 @@
+{
+  "products": [
+    {
+      "id": "cafe-luna",
+      "name": "Latte Luna",
+      "tagline": "Suave, cremoso y reconfortante",
+      "category": "Cafés",
+      "price": 12500,
+      "description": "Espresso equilibrado con leche cremosa y un toque de vainilla.",
+      "icon": "☾",
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": "cafe-esmeralda",
+      "name": "Matcha Esmeralda",
+      "tagline": "Una pausa llena de energía",
+      "category": "Especiales",
+      "price": 14500,
+      "description": "Matcha suave, leche a elección y dulzor delicado.",
+      "icon": "✳",
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": "cafe-cacao",
+      "name": "Cacao Abrazo",
+      "tagline": "Como un abrazo en una taza",
+      "category": "Especiales",
+      "price": 13500,
+      "description": "Chocolate artesanal, leche caliente y notas de canela.",
+      "icon": "♡",
+      "featured": true,
+      "active": true
+    },
+    {
+      "id": "cafe-americano",
+      "name": "Americano Calma",
+      "tagline": "Simple, intenso y honesto",
+      "category": "Cafés",
+      "price": 9500,
+      "description": "Café de origen preparado para disfrutar sin prisa.",
+      "icon": "☕",
+      "featured": false,
+      "active": true
+    },
+    {
+      "id": "te-lavanda",
+      "name": "Té Brisa Lila",
+      "tagline": "Un momento para respirar",
+      "category": "Tés e infusiones",
+      "price": 10500,
+      "description": "Infusión aromática de frutos y flores con notas suaves.",
+      "icon": "✿",
+      "featured": false,
+      "active": true
+    },
+    {
+      "id": "frappe-dorado",
+      "name": "Frappé Dorado",
+      "tagline": "Frescura para cambiar el ritmo",
+      "category": "Fríos",
+      "price": 15000,
+      "description": "Bebida fría de café, hielo y crema ligera.",
+      "icon": "✧",
+      "featured": false,
+      "active": true
+    }
+  ],
+  "messages": [],
+  "orders": []
+}

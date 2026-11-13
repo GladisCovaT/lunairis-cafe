@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lunairis Café | Vive, crea y conecta</title>
+  <meta name="description" content="Lunairis Café: café, tecnología, arte, experiencias creativas y bienestar para todas las edades.">
+  <meta name="theme-color" content="#174d3c">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <a href="#inicio" class="logo">LUNAIRIS<span> CAFÉ</span></a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+    ☰
+  </button>
+
+  <nav id="navMenu">
+    <a href="#inicio">Inicio</a>
+    <a href="#experiencias">Experiencias</a>
+    <a href="#menu">Menú</a>
+    <a href="#rutina">Mi rutina</a>
+    <a href="#reservas">Reservar</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <a href="#reservas" class="header-button">Reserva tu espacio</a>
+</header>
+
+<main>
+
+<!-- INICIO -->
+
+<section class="hero" id="inicio">
+
+    <img class="hero-background" src="assets/cafe.jpg" alt="Interior de Lunairis Café">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            ☾ UN ESPACIO PARA CONECTAR CONTIGO
+        </span>
+
+        <h1>
+            Lunaris Café
+            <span>Un lugar para sentir, crear y volver a ti.</span>
+        </h1>
+
+        <p>
+            Mucho más que una cafetería. Un espacio donde el café,
+            el arte, la tecnología y las experiencias se unen
+            para crear momentos inolvidables.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#experiencias" class="btn-primary">
+                Descubre nuestra experiencia
+            </a>
+
+            <a href="#nosotros" class="btn-secondary">
+                Conócenos
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-scroll">
+        <span>DESCUBRE LUNARIS</span>
+        <span>↓</span>
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCIAS -->
+<section class="section" id="experiencias">
+  <div class="section-heading">
+    <span class="eyebrow">DESCUBRE TU LADO CREATIVO</span>
+    <h2>¿Qué te gustaría hacer hoy?</h2>
+    <p>Elige una experiencia y convierte tu visita en algo especial.</p>
+  </div>
+
+  <div class="experience-grid">
+
+    <article class="experience-card">
+      <img src="assets/gaming.jpg" alt="Zona de videojuegos">
+      <div class="experience-info">
+        <span class="category-tag">TECNOLOGÍA</span>
+        <h3>Gaming Zone</h3>
+        <p>Disfruta de PlayStation, videojuegos y experiencias digitales.</p>
+        <a href="#reservas" class="experience-link">Reservar experiencia →</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <img src="assets/books.jpg" alt="Rincón de lectura">
+      <div class="experience-info">
+        <span class="category-tag">TRANQUILIDAD</span>
+        <h3>Book Corner</h3>
+        <p>Descubre libros, lee y encuentra un momento para ti.</p>
+        <a href="#reservas" class="experience-link">Reservar experiencia →</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <img src="assets/flowers.jpg" alt="Pintura y lienzos">
+      <div class="experience-info">
+        <span class="category-tag">ARTE</span>
+        <h3>Art Studio</h3>
+        <p>Pinta, dibuja y expresa tus emociones a través del arte.</p>
+        <a href="#reservas" class="experience-link">Reservar experiencia →</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <img src="assets/taller.jpg" alt="Taller de flores">
+      <div class="experience-info">
+        <span class="category-tag">CREATIVIDAD</span>
+        <h3>Flower Lab</h3>
+        <p>Aprende a armar ramos y crea composiciones florales.</p>
+        <a href="#reservas" class="experience-link">Reservar experiencia →</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <img src="assets/technology.jpg" alt="Experiencias tecnológicas">
+      <div class="experience-info">
+        <span class="category-tag">INNOVACIÓN</span>
+        <h3>Future Lab</h3>
+        <p>Computadores, inteligencia artificial y exploración digital.</p>
+        <a href="#reservas" class="experience-link">Reservar experiencia →</a>
+      </div>
+    </article>
+
+    <article class="experience-card">
+      <img src="assets/workshop.jpg" alt="Taller creativo">
+      <div class="experience-info">
+        <span class="category-tag">BIENESTAR</span>
+        <h3>Creative Moments</h3>
+        <p>Talleres, actividades grupales y momentos de conexión.</p>
+        <a href="#reservas" class="experience-link">Reservar experiencia →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section menu-section" id="menu">
+  <div class="section-heading">
+    <span class="eyebrow">SABORES QUE ACOMPAÑAN MOMENTOS</span>
+    <h2>Nuestro pequeño universo de sabores</h2>
+    <p>Desde un buen café hasta algo delicioso para compartir.</p>
+  </div>
+
+  <div class="filter-buttons" id="menuFilters">
+    <button class="filter active" data-filter="todos">Todo</button>
+    <button class="filter" data-filter="cafe">Cafés</button>
+    <button class="filter" data-filter="bebidas">Bebidas</button>
+    <button class="filter" data-filter="panaderia">Panadería</button>
+    <button class="filter" data-filter="infantil">Menú infantil</button>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+
+    <article class="product-card" data-category="cafe">
+      <img src="assets/images/cappuccino.jpg" alt="Cappuccino">
+      <div class="product-info">
+        <span>CAFETERÍA</span>
+        <h3>Cappuccino Lunairis</h3>
+        <p>Café espresso con leche cremosa.</p>
+        <div class="product-bottom">
+          <strong>$9.000</strong>
+          <button class="add-cart" data-name="Cappuccino Lunairis" data-price="9000">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="cafe">
+      <img src="assets/images/latte.jpg" alt="Latte">
+      <div class="product-info">
+        <span>CAFETERÍA</span>
+        <h3>Vanilla Latte</h3>
+        <p>Espresso, leche y un toque de vainilla.</p>
+        <div class="product-bottom">
+          <strong>$10.000</strong>
+          <button class="add-cart" data-name="Vanilla Latte" data-price="10000">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="bebidas">
+      <img src="assets/images/chocolate.jpg" alt="Chocolate frío">
+      <div class="product-info">
+        <span>BEBIDAS</span>
+        <h3>Chocolate frío</h3>
+        <p>Chocolate cremoso y refrescante.</p>
+        <div class="product-bottom">
+          <strong>$8.000</strong>
+          <button class="add-cart" data-name="Chocolate frío" data-price="8000">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="panaderia">
+      <img src="assets/images/croissant.jpg" alt="Croissant">
+      <div class="product-info">
+        <span>PANADERÍA</span>
+        <h3>Croissant artesanal</h3>
+        <p>Hojaldre dorado y recién horneado.</p>
+        <div class="product-bottom">
+          <strong>$6.000</strong>
+          <button class="add-cart" data-name="Croissant artesanal" data-price="6000">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="panaderia">
+      <img src="assets/images/bread.jpg" alt="Pan artesanal">
+      <div class="product-info">
+        <span>PANADERÍA</span>
+        <h3>Pan artesanal</h3>
+        <p>Una opción deliciosa para acompañar.</p>
+        <div class="product-bottom">
+          <strong>$5.000</strong>
+          <button class="add-cart" data-name="Pan artesanal" data-price="5000">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="infantil">
+      <img src="assets/images/pizza.jpg" alt="Pizza infantil">
+      <div class="product-info">
+        <span>MENÚ INFANTIL</span>
+        <h3>Mini pizza</h3>
+        <p>Pizza individual con queso.</p>
+        <div class="product-bottom">
+          <strong>$13.000</strong>
+          <button class="add-cart" data-name="Mini pizza" data-price="13000">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="infantil">
+      <img src="assets/images/burger.jpg" alt="Hamburguesa infantil">
+      <div class="product-info">
+        <span>MENÚ INFANTIL</span>
+        <h3>Mini hamburguesa</h3>
+        <p>Hamburguesa especial para pequeños.</p>
+        <div class="product-bottom">
+          <strong>$15.000</strong>
+          <button class="add-cart" data-name="Mini hamburguesa" data-price="15000">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="infantil">
+      <img src="assets/images/milo.jpg" alt="Milo frío">
+      <div class="product-info">
+        <span>MENÚ INFANTIL</span>
+        <h3>Milo frío o caliente</h3>
+        <p>Una bebida clásica para disfrutar.</p>
+        <div class="product-bottom">
+          <strong>$7.000</strong>
+          <button class="add-cart" data-name="Milo frío o caliente" data-price="7000">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="infantil">
+      <img src="assets/images/hot-chocolate.jpg" alt="Chocolate caliente">
+      <div class="product-info">
+        <span>MENÚ INFANTIL</span>
+        <h3>Chocolate caliente</h3>
+        <p>Chocolate suave y reconfortante.</p>
+        <div class="product-bottom">
+          <strong>$7.000</strong>
+          <button class="add-cart" data-name="Chocolate caliente" data-price="7000">+</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="cart-panel">
+    <div>
+      <span>Tu selección</span>
+      <h3><span id="cartCount">0</span> productos</h3>
+    </div>
+    <div>
+      <strong id="cartTotal">$0</strong>
+      <button class="btn-primary" id="viewCart">Ver pedido</button>
+    </div>
+  </div>
+
+  <div id="cartDetails" class="cart-details" hidden></div>
+</section>
+
+<!-- RUTINA IDEAL -->
+<section class="section routine-section" id="rutina">
+  <div class="routine-content">
+    <span class="eyebrow">TU BIENESTAR COMIENZA CONTIGO</span>
+    <h2>Diseña tu rutina ideal.</h2>
+    <p>
+      No todos necesitamos lo mismo. Elige las actividades que
+      te gustaría realizar y crea una experiencia a tu medida.
+    </p>
+
+    <div class="routine-options">
+      <label><input type="checkbox" value="Leer un libro"> Leer un libro</label>
+      <label><input type="checkbox" value="Pintar un lienzo"> Pintar un lienzo</label>
+      <label><input type="checkbox" value="Jugar videojuegos"> Jugar videojuegos</label>
+      <label><input type="checkbox" value="Armar un ramo de flores"> Armar flores</label>
+      <label><input type="checkbox" value="Explorar tecnología"> Explorar tecnología</label>
+      <label><input type="checkbox" value="Disfrutar un café"> Disfrutar un café</label>
+      <label><input type="checkbox" value="Compartir un taller"> Compartir un taller</label>
+    </div>
+
+    <button class="btn-primary" id="createRoutine">Crear mi rutina</button>
+
+    <div class="routine-result" id="routineResult" aria-live="polite">
+      <h3>Tu experiencia aparecerá aquí.</h3>
+      <p>Selecciona tus actividades favoritas para comenzar.</p>
+    </div>
+  </div>
+  <div class="routine-image">
+    <img src="assets/images/routine.jpg" alt="Espacio creativo y relajante">
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section class="section booking-section" id="reservas">
+  <div class="section-heading">
+    <span class="eyebrow">TU ESPACIO TE ESTÁ ESPERANDO</span>
+    <h2>Agenda tu momento Lunairis.</h2>
+    <p>Selecciona tu grupo de edad, experiencia y horario preferido.</p>
+  </div>
+
+  <div class="booking-layout">
+    <div class="booking-description">
+      <h3>Un espacio para cada etapa.</h3>
+      <p>
+        Organizamos experiencias adaptadas a las edades,
+        intereses y necesidades de nuestros visitantes.
+      </p>
+
+      <div class="age-info">
+        <div><strong>Niños</strong><span>6 a 12 años</span></div>
+        <div><strong>Jóvenes</strong><span>13 a 17 años</span></div>
+        <div><strong>Adultos</strong><span>18 años en adelante</span></div>
+      </div>
+
+      <p class="small-note">
+        Los menores deben asistir con un adulto responsable
+        y contar con su autorización. Los horarios y actividades
+        infantiles se realizan con supervisión.
+      </p>
+    </div>
+
+    <form id="bookingForm" class="booking-form">
+
+      <label for="visitorName">Nombre del visitante</label>
+      <input id="visitorName" name="name" type="text" required placeholder="Tu nombre">
+
+      <label for="visitorEmail">Correo electrónico</label>
+      <input id="visitorEmail" name="email" type="email" required placeholder="correo@ejemplo.com">
+
+      <label for="visitorAge">Grupo de edad</label>
+      <select id="visitorAge" name="ageGroup" required>
+        <option value="">Selecciona tu grupo</option>
+        <option value="ninos">Niños (6-12 años)</option>
+        <option value="jovenes">Jóvenes (13-17 años)</option>
+        <option value="adultos">Adultos (18+ años)</option>
+      </select>
+
+      <label for="visitorCount">Cantidad de visitantes</label>
+      <input id="visitorCount" name="people" type="number" min="1" max="10" value="1" required>
+
+      <label for="bookingActivity">Experiencia</label>
+      <select id="bookingActivity" name="activity" required>
+        <option value="">Selecciona una experiencia</option>
+        <option>Gaming Zone</option>
+        <option>Book Corner</option>
+        <option>Art Studio</option>
+        <option>Flower Lab</option>
+        <option>Future Lab</option>
+        <option>Creative Moments</option>
+        <option>Experiencia libre</option>
+      </select>
+
+      <label for="bookingDate">Fecha de visita</label>
+      <input id="bookingDate" name="date" type="date" required>
+
+      <label for="bookingTime">Horario disponible</label>
+      <select id="bookingTime" name="time" required disabled>
+        <option value="">Primero selecciona el grupo de edad</option>
+      </select>
+
+      <label for="bookingNotes">¿Algo que debamos saber? (opcional)</label>
+      <textarea id="bookingNotes" name="notes" rows="3" placeholder="Cuéntanos sobre tus preferencias..."></textarea>
+
+      <label class="consent">
+        <input type="checkbox" required>
+        Acepto que se utilicen mis datos para gestionar esta reserva.
+      </label>
+
+      <button class="btn-primary" type="submit">Solicitar mi reserva</button>
+
+      <p id="bookingMessage" class="form-message" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section contact-section" id="contacto">
+  <div class="section-heading">
+    <span class="eyebrow">ESTAMOS PARA ESCUCHARTE</span>
+    <h2>Conectemos.</h2>
+    <p>Queremos conocer tus ideas, preguntas y propuestas.</p>
+  </div>
+
+  <form id="contactForm" class="contact-form">
+    <input name="name" type="text" placeholder="Tu nombre" required>
+    <input name="email" type="email" placeholder="Tu correo" required>
+    <textarea name="message" placeholder="Escríbenos..." rows="5" required></textarea>
+    <button class="btn-primary" type="submit">Enviar mensaje</button>
+    <p id="contactMessage" aria-live="polite"></p>
+  </form>
+</section>
+
+</main>
+
+<footer class="footer">
+  <a href="#inicio" class="logo">LUNAIRIS CAFÉ</a>
+  <p>Un espacio donde cada generación tiene algo que descubrir.</p>
+  <p>© 2026 Lunairis Café. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
